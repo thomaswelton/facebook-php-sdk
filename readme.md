@@ -1,3 +1,5 @@
+[![Total Downloads](https://poser.pugx.org/thomaswelton/facebook-php-sdk/downloads.png)](https://packagist.org/packages/thomaswelton/facebook-php-sdk)
+
 Facebook PHP SDK (v.3.2.2)
 
 The [Facebook Platform](http://developers.facebook.com/) is
