@@ -15,6 +15,8 @@
  * under the License.
  */
 
+namespace Facebook;
+
 require_once __DIR__ . '/BaseFacebook.php';
 
 /**
