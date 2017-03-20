@@ -413,7 +413,11 @@ abstract class BaseFacebook
     }
 
     $response_params = array();
-    parse_str($access_token_response, $response_params);
+    $response_params = json_decode($access_token_response,true);
+    if (!$response_params) {
+        parse_str($access_token_response, $response_params);
+    }
+
 
     if (!isset($response_params['access_token'])) {
       return false;
@@ -823,7 +827,11 @@ abstract class BaseFacebook
     }
 
     $response_params = array();
-    parse_str($access_token_response, $response_params);
+    $response_params = json_decode($access_token_response,true);
+    if (!$response_params) {
+        parse_str($access_token_response, $response_params);
+    }
+
     if (!isset($response_params['access_token'])) {
       return false;
     }
